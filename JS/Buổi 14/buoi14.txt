@@ -1,0 +1,49 @@
+JQuery là thư viện js dựng lên từ DOM            
+
+
+bộ trỏ
+$(the/ .class / #id)            querySelectorAll
+
+eq(index)                       trỏ phần tử trong array jquery 
+
+html()                          innerHTML
+                                truy vấn , sửa nội dung giữa thẻ đóng mở html
+
+val()                           value
+                                truy vấn , sửa nội dung input
+
+============================================================================
+
+xóa HTML 
+remove()                        xóa tất cả các thẻ HTML đang trỏ
+
+=============================================================================
+thêm mới HTML
+
+append                          Thêm vào cuối , có thể dung string HTML
+
+prepend                         Thêm lên đầu , cs thể dùng string HTML
+
+
+attribute
+
+attr(key)                       getAttribute(key)
+
+attr(key , value)               setAttribute(key , value)
+
+css([key: value])               chỉnh sửa style
+
+addClass(class)                 thêm class
+
+=============================================================================
+
+event
+
+on('event' , function(){....})  addEventListenner()
+                                thêm sự kiện
+
+off('event' , function(){....}) removeEventListenner()
+                                hủy sự kiện
+
+off('event')                    hủy mọi chức năng click đang có
+

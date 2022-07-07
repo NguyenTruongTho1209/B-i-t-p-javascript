@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="baitap.css">
+</head>
+<body>
+    <div class="form">
+        <div class="container">
+            <div class="header">TIP CALCULATOR</div>
+            <div class="content">
+                <p>How much was your bill?</p>
+                <span>$</span><input type="text" class="bill" placeholder="Bill Amout">
+                <p>How was your service?</p>
+                <select id="choseOption">
+                    <option selected>-- Chosse an Option --</option>
+                    <option value="0.3"> 30% - Outstanding</option>
+                    <option value="0.2"> 20% - Good</option>
+                    <option value="0.15"> 15% - It was OK</option>
+                    <option value="0.05"> 5% - Terrible</option>
+                </select>
+                <p>How many people are sharing the bill?</p>
+                <input type="number" class="numberPeople" placeholder="Number of People">
+            </div>
+            <div class="btn">
+                <button>CALCULATE!</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="baitap.js"></script>
+</html>

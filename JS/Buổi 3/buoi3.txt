@@ -1,0 +1,73 @@
+if ( logic điều kiện) {
+    // code nếu điều kiện đúng
+}else{
+    // code nếu điều kiện sai
+}
+
+Với 3 ngôi thì cẩn đủ điều kiện đúng hoặc sai
+Với if else thì chỉ cần điều kiện đúng là được
+Nếu muốn xử lý trường hợp sai ta chỉ cần thêm 
+trường hợp nếu sai trong else là được
+
+if else cũng có thể nối chuỗi giống 3 ngôi bằng việc sử dụng else if ()
+
+if (dk1) {                      Nếu dk1 true thì code dk1 thực thì code 1 được thực thi
+    // code true                thực thi 1 lần
+}else if (dk2){                 Nếu điều dk1 false và dk2 true thì code 2 được thực thi
+    // code 2                   thực thi 1 lần
+}else {                         Nếu cả dk1 và dk2 false thì code false được thực thi
+    // code false
+}
+
+switch( value ) {               switch lấy value so sánh các case
+    case value1:                nếu value khớp với case nào thì code từ case đó trở xuông được thực thi
+        // code                 break để kết thúc hàm điều kiện
+        break                   switch từ khóa khai báo
+    case value2:                case : các trường hợp kiểm tra giá trị
+        // code2                default : trường hợp nào xảy ra khi không khớp case nào
+        break
+    default
+        // code default
+}
+
+==============================================================================================================
+
+Vòng lặp while :
+
+while (dk) {                        Nếu dk true thì code thực thi
+    // code thực thi                code được thực thi đến khi điều kiện sai thì mới dừng lại
+}
+
+Vòng lặp do while :
+
+do {                                code thực thi trước , kiểm tra dk sau
+    // code                         code thực thi ít nhất 1 lần
+}while(dk)                          code thực thi đến khi sai thì thôi
+
+* Lưu ý : vòng lặp thì cần để ý 3 tham số
+- điểm bắt đầu : start
+- điểm kết thúc : stop
+- tốc chạy : speed
+                lưu ý phải chạy hướng về đích
+
+Vòng lặp For :
+
+for ( start ; stop ; speed) {       vòng lặp chạy từ start đến stop
+    // code
+}
+
+for of :
+
+for ( var value of array) {         array : array muốn duyệt qua
+    // code                         value : giá trị phần tử trong array
+}
+
+for in :
+
+for ( var key of obj) {             obj : object muốn duyệt qua 
+    // code                         key : key trong object
+}
+
+break :                             kết thúc hàm , điều kiện 
+                                    có thể sử dụng trong vòng lặp và hàm điều kiện
+continue :                          sử dụng để bỏ qua vòng lặp hiện tại và thực thi ngay vòng lặp tiếp theo

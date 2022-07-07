@@ -1,0 +1,21 @@
+Math Method  
+
+- Math.abs(number)                  Trả về giá trị tuyệt đối
+
+- Math.round(number)                làm tròn
+                                    >= 0.5 làm tròn lên
+                                    < 0.5 làm tròn xuống
+
+- Math.ceil(number)                 Làm tròn lên
+
+- Math.floor(number)                Làm tròn lên
+
+- .toFixed(x)                       Làm tròn đến số thập phân thứ x
+
+- Math.max(...number)               Tìm số lớn nhất
+
+- Math.min(...number)               Tìm số nhỏ nhất
+
+- Math.pow(x , y)                   x ** y
+
+- Math.trunc(number)                Lấy phần nguyên

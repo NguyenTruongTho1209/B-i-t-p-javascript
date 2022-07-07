@@ -1,0 +1,52 @@
+DOM                 Document Object Model
+                    Object Model của file HTML
+                    Khi gửi HTML lên trình duyệt để hiển thị thì trình duyệt sẽ tạo ra DOM
+                
+Window              Object trình duyệt
+
+Document            DOM do Window tạo ra
+
+====================================================================
+truy vấn
+
+document.querySelector(dk)          trả về thẻ đầu tiên thỏa mãn điều kiện
+
+document.querySelectorAll(dk)       trả về tất cả các thẻ thỏa mãn đk 
+
+document.querySelector('.class')    trả về class đầu tiên tìm thấy
+
+document.querySelectorAll('.class') trả về tất cả các class tìm thấy
+
+document.querySelector('.class p')  truy vấn class theo quan hệ cha con
+
+====================================================================================
+
+DOM.innerHTML                       truy vấn , ghi đè nội dung giữa thẻ đóng và thẻ mở
+                                    có thể biên dịch text => HTML
+
+DOM.value                           truy vấn, ghi đè nội dung trong input
+
+=======================================================================
+
+getAttribute(key)                   key:    tìm attribute cần truy vấn
+                                    Truy vấn nội dung attribute 'key' của thẻ cảu thẻ chỉ định
+                                
+setAttribute(key , value)           key:    tên attribute cần chỉnh sửa
+                                    value   giá trị mới cho attribute
+                                    chỉnh sửa attribute 'key' thành 'value
+
+===========================================================================
+
+DOM.remove()                        xóa DOM đang trỏ
+
+===============================================================================
+
+B1 tạo DOM ảo                       
+
+createElement(tag)                  tạo DOM rỗng
+
+B2 thêm vào giao diện
+
+DOM.append(DOM ảo)                  chèn DOM ảo vừa tạo vào cuối của DOM đang trỏ (push)
+
+DOM.prepend(DOM ảo)                 chèn DOM ảo vừa tạo lên đầu của DOM đang trỏ (unshift)

@@ -1,0 +1,10 @@
+Bài 2:
+for(let i = 0; i < 10 ; i++){
+
+}
+
+console.log(i)
+
+Giá trị của i là gì ? Giải thích
+
+console.log(i) sẽ bị lỗi vì i được khai báo bằng let nên chỉ có thể sử dụng bên trong vòng lặp for

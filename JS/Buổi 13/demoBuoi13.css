@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.app{
+    width: 200px;
+    margin: auto;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}

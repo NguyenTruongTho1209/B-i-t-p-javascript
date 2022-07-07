@@ -1,0 +1,10 @@
+Bài 3: cho
+const object ={
+		name: “nodemy”
+}  
+a , Có gán lại  được object = “ nodemy” được không? Vì sao?
+b  ,Có gán lại được object.name = “YA” được không?Vì sao?
+
+
+a , không thể gán đc vì object được khai báo bằn const 
+b , tương tự

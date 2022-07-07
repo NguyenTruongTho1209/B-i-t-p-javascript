@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+}
+table{
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+thead , tbody{
+    width: 100%;
+}
+
+.true{
+    width: 30px;
+    height: 30px;
+    background: green;
+    border-radius: 50%;
+}
+
+.false{
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+}
+.date{
+    font-size: large;
+}
+
+.day{
+    font-size: medium;
+}
+
+.moth{
+    opacity: 0.5;
+}
+
+.listData{
+    width: 50%;
+    margin: auto;
+}
+
+.typetrue, .typefalse{
+    float: right;
+}
+
+.app {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}

@@ -1,0 +1,12 @@
+// Bài 1: 
+// cho for(let i =0;i< 10;i++){
+
+// }
+// console.log(i);
+
+// giá trị của i là gì? Nếu thay let bằng var thì giá trị 
+// của i có thay đổi như thế nào k? Tại sao?
+
+
+- khi console ra sẽ bị lỗi nếu thay let thành var thì i sẽ có giá trị là 10
+-tại vì khi i chạy từ 0 => 9 trong vòng for khi chạy đến 10 thì sẽ ko thỏa mãn điều kiện và khi console i sẽ là 10

@@ -1,0 +1,11 @@
+Bài 1:
+for(var i = 0; i < 10 ; i++){
+
+}
+
+console.log(i)
+
+Giá trị của i là gì ?
+
+i = 10 vì i được khai báo bằng var nên khi chạy vòng lặp điều kiện để kết thúc là < 10 ,
+nên khi console.log i ở ngoài ta sẽ đc 10

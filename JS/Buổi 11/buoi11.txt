@@ -1,0 +1,61 @@
+Promise                     Là một lời hứa sẽ trả về kết quả trong tương lai bất kể thành công hay thất bại
+
+đồng bộ                     Là code chạy từ trên xuống dưới theo trình tự thông thường
+
+bất đồng bộ                 Là code không chạy theo trình tự bình thường
+
+setTimeOut(function(){      thực thi code 1 lần duy nhất sau khi kết thúc đếm ngược timer
+    // ...                  bất dồng bộ
+}, timer)
+
+clearTimeOut(time)          xóa bỏ setTimeOut cụ thể
+
+setInterval(function(){     thực thi code mỗi khi kết thúc đếm ngược timer
+    // ...                  đồng bộ
+}, timer)
+
+clearInterval(time)         xóa bỏ setInterval cụ thể          
+
+================================================================================
+
+
+callStack                   Biên dịch code => ngôn ngữ máy tính
+                            thực thi code sau khi biên dịch
+                            chỉ làm một việc tạ 1 thời điểm
+
+Wep API / node API          Xử lý các câu lệnh bất đồng bộ
+                            thường là gửi request về server
+                            response trả về được lưu trong callback-quêu bất kể thành công hay thất bại
+
+callback-queue              sắp xếp theo trình tự vào trước đi trước , vào sau đi sau
+                            (tìm hiểu thêm microTask , macroTask)
+
+even-loop                   kiểm tra callStack
+                            Khi nào callStack rỗng thù mới dưa callback-queue lên để thực thi
+                            chỉ khi file code chạy hết khi even-loop mới đưa callback-queue lên callStack
+
+==============================================================================================
+
+Promise                     Là một lời hứa sẽ trả về kết quả trong tương lai bất kể thành công hay thất bại
+
+new Promise(function(res , rej){    new Promise để tạo promise
+    if(dk){                         res     function trả data về nếu thành công
+        res(data)                   rej     function trả lỗi về nếu thất bại
+    }else{
+        rej(err)
+    }
+})
+
+p.then(function(data){              .then   Nhận kết quả trẻ về của res()
+    //...                                   Để xử lý promise
+                                            then trả về 1 promise
+                                            
+}).catch(function(err){             .catch  nhận kết quả trả về của rej()
+    //...
+})                                  Cứ có promise thì dùng 
+ then carch để sử lý
+
+Promise.all([p1 , p2 , ...])        gom data của các promise về 1 chỗ
+                                    trả về thành công nếu tất cả promise con thành công
+                                    trả về thất bại nếu các bất kỳ promise con nào thất bại
+                                    

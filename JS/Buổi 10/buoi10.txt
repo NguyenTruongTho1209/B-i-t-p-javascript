@@ -1,0 +1,4 @@
+- callback                  Là function được truyền vào tham số của function khác
+                            (map , filter , sort , findIndex)
+
+Khi sử dụng callback thì tính tái sử dụng , ứng dụng của function được mở rộng

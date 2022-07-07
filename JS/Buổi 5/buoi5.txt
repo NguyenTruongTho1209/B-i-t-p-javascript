@@ -1,0 +1,68 @@
+Array Method
+
+- push()            Dùng để thêm phần tử vào cuối Array
+                    Biến đổi trực tiếp data gốc
+
+- pop()             Xóa phần tử cuối cùng trong Array
+                    Biến đổi trực tiếp data gốc
+
+- unshift()         Thêm phần tử vào đầu Array
+
+- shift()           Xóa phần tử ở đầu array
+
+...                 spread operator
+                    liệt kê , phân giải các phần tử trong Array , objec    
+
+[...array1 ,...array2]
+{...objec1 ,...objec2}
+
+- splice(start: number, deleteCount: number, new) 
+                    start:          Vị trí bắt đầu làm việc
+                    deleteCount:    số lượng xóa bắt đầu từ start
+                    new:            phần tử chèn thêm bắt đầu từ start
+
+======================================================================
+
+- map(function (value , index)) {       Value : gá trị của phần tử trong array
+    //.....                             Index : vị trí cuat phần tử phải xét
+    return newValue                     Map sẽ tạo ra array mới từ array ban đầu
+}                                       Số lượng phần tử của array đầu ra và array gốc === nhau
+                                        Không ảnh hướng đến data gốc 
+                                        map trả ra cái gì thì array đầu ra nhận cái đó
+
+- filter(function (value , index){      Value : giá trị của phần tử trong array
+    // ....                             Index : vị trí cảu phần tử đang xét
+    return true / false                 filter sẽ tạo ra array mới sau khi đã lọc bỏ các pt không thỏa mãn
+})                                      return true : giữ lại phần tử
+                                        return false : loại bỏ phần tử
+                                        Không ảnh hưởng đến data gốc , không biến đổi giá trị phần tử
+
+- sort(function (after , before) {      after : số đứng sau
+    ///                                 before : số đưunsg trước
+    return -1 / 1 / 0                   return -1   after đứng trước before
+})                                      return +1   before đứng trước after
+                                        return 0    dữ nguyên vị trí
+
+- reverse()                             Đảo ngược trình tự array
+- join(x)                               join sẽ tạo ra string từ array 
+                                        Ký tự 'x' sẽ đưuọc xen giữa các phần tử trong array
+
+- indexOf(value , index)                Tìm kiếm vị trí index của value trong array
+                                        Value : giá trị tìm kiếm
+                                        index : vị trí bắt đầu tìm kiếm
+                                        Trả về vị trí tìm được
+                                        Nếu không tìm thấy thì trả về -1      
+
+objec.key(obj)                          Trả về array chứa các key 
+
+findIndex(function ( value , index){    Tìm kiếm vị trí của value trong array
+    //                                  value : giá trị phần tử trong array
+    return true / false                 index : vị trí phần tử đang xét
+})                                      return true thì trả vị trí về
+                                        return false thì tiếp tục tìm kiếm
+                                        trả về vị trí đầu tiên tìm được
+                                        tìm không ra thì trả về -1
+
+slice(start , end)                      Copy array và tạo ra array mới
+                                        start : Điểm bắt đầu Copy
+                                        end : Điểm kết thúc Copy

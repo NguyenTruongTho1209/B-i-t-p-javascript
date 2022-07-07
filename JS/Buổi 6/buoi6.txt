@@ -1,0 +1,54 @@
+String Method                   Là các hàm có sẵn trong JS để xử lý String
+
+string[i]                       lấy ký tự ở vị trí i trong string
+                                Chỉ có thể truy vấn , không ghi đè vào string
+
+charCodeAt(i)                   Tham chiếu ký tự thứ i với bảng ascii
+
+slice(start , end)              Copy string và tạo ra string mới
+                                start : Điểm bắt đầu Copy
+                                end : Điểm kết thúc Copy
+
+indexOf(value , index)          value: giá trị tìm kiếm
+                                index: vị trí bắt đầu tìm kiếm
+                                trả về vị trí xuất hiện đầu tiên
+
+lastIndexOf(value , index)      value: giá trị tìm kiế
+                                index: vị trí bắt đầu tìm kiếm
+                                trả về vị trí xuất hiện cuối cùng
+
+startsWith(value , index)       value : giá trị kiểm tra
+                                index : vị trí bắt đầu kiểm tra
+                                Kiểm tra xem string có bắt đầu bằng value hay không
+
+endsWith(value , index)         value : giá trị kiểm tra
+                                index : vị trí bắt đầu kiểm tra
+                                Kiểm tra xem string có kết thúc bằng value hay không
+
+fromCharCode(index , index)     value : giá trị kiểm tra
+                                index : vị trí bắt đầu kiểm tra
+                                Trả về kí tự tại vị trí index trên bảng ascii
+
+includes(value , index)         value : giá trị kiểm tra
+                                index : vị trí bắt đầu kiểm tra
+                                Kiểm tra sự tồn tại của value trong string , array
+
+toLowerCase()                   Tạo ra string mới viết thường
+
+toUpperCase()                    Tạo ra string mới viết hoa
+
+replace(oldString , newString)  Tạo ra string mới có kí tự thay thế
+                                oldString : ký tự cũ muốn loại bỏ
+                                newString : ký tự mới muốn thay vào oldString
+
+split(x)                        Tạo ra array từ string
+                                x là tín hiệu để cắt string
+
+strim()                         Loại bỏ khoảng trắng thừ trong string
+
+repeat(number)                  Tạo ra string mới được lặp lại number lần
+
+raplace(/oldString/g , newString)           Thay thế trên toàn bộ string
+
+raplace(/oldString/i , newString)           Thay thế bỏ qua chữ hoa , chữ thường
+

@@ -1,0 +1,25 @@
+function            là 1 hàm được định nghĩa trước làm 1 chức năng cụ thể
+                    function sẽ thường có đầu vào (input) và đầu ra (output)
+
+khai báo function
+
+function ten (input) {          'function' từ khóa khai báo
+    // logic xử lý đầu vào      logic tự viết theo yêu cầu
+    return output               return để trả về kết quả
+}                               logic của functiong có thể tái sử dụng
+
+ten(input)                      thực thi function
+
+B1 :
+viết xử lý 1  trường hơp function
+
+B2:
+bọc logic vào trong function 
+sửa logic để tương tác với đầu vào
+thêm return cho function
+
+B3:
+dùng function
+
+lưu ý : Khi viết function phải sử dụng được cho nhiều trường hợp
+=> Thay đổi tham số đầu vào để kiểm chứng

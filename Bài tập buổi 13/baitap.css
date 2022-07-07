@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form{
+    background: #611d12;
+    width: 100%;
+    padding: 30px;
+}
+
+.container {
+    width: 300px;
+    background: white;
+    margin: 0 auto;
+}
+.header {
+    background: #1c050d;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+.content {
+    padding: 12px;
+
+}
+
+.content p {
+    margin: 12px 0;
+}
+
+.content input{
+    padding: 8px 10px;
+}
+
+.btn{
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.btn button{
+    padding: 10px;
+    font-size: large;
+    background: #a1273c;
+    color: white;
+
+}

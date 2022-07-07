@@ -1,0 +1,9 @@
+broser storage          kho lưu trữ data trực tiếp trên trình duyệt
+
+local storage           kho lưu trữ vinh viễn
+                        xóa mới mất
+
+seseion storage         chỉ lưu trữ trong phiên
+                        tắt tab thì mất data
+
+cookie storage          lưu trữ đến 

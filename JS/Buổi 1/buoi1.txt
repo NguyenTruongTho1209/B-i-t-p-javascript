@@ -1,0 +1,145 @@
+node -v         kiểm tra phiên bản với node
+node name.js    muốn chạy file 'name.js'
+                lưu ý muốn chạy file thì phải ở cùng đường dẫn
+
+================================================================
+
+console.log(data)       hiển thị ra 'data' dưới terminal
+
+var name = value        khai báo biến 'name'
+                        gán value thành giá trị của 'name'
+
+'='                     là toán tử gán 
+
+===============================================================
+Number
+age = 1
+===============================================================
+ string
+ lưu ý string phải được bọc trong '' hoặc ""
+
+ var userName = 'truongtho';
+ hoặc
+ var userName = "truongtho";
+Lưu ý : khai báo string bằng ngoặc nào thì phải kết thúc string bằng ngoặc đấy
+
+VD: 
+var chat = 'huy nói: "xin chào anh em"'
+
+console.log(chat);
+// huy nói: "xin chào anh em"`
+
+var userName = `truongtho`  Khai báo nhưng giá trị phức tạp , nhiều dòng
+                            Nó còn có thể chèn logic bên trong
+
+VD: var chat = `huy nói: "xin chào anh em"
+thai tra loi: "hi" ${1 + 1}`
+// huy nói: "xin chào anh em"
+// thai tra loi: "hi" 2
+
+VD2: 
+var nv1 = 'Nam';
+var nv2 = 'Lâm';
+
+chat = `
+${nv1} nói: "Xin chào anh em"
+${nv2} trả lời: "hi"
+${nv1} nói: "Bài tập ok chứ"
+${nv2} trả lời: "ok"
+`
+console.log(chat);
+
+output
+Nam nói: "Xin chào anh em"
+Lâm trả lời: "hi"
+Nam nói: "Bài tập ok chứ"
+Lâm trả lời: "ok"
+
+=========================================================
+object          thường để lưu những thông tin chi tiết cụ thể của dối tượng
+
+var object = {          Các thuộc tính đi theo cặp key:value
+    key1: value1,       Các thuộc tính cách nhau bởi ,
+    key2: value2,
+}
+
+Lưu ý: code viết sau sẽ đè code viết trước 
+
+object.key              truy vấn và ghi đè , thêm mới nội dung của key trong object
+                        không thể dùng logic trong truy vấn
+
+VD:
+var user = {
+    name: 'Tho',
+    tuoi: 20,
+    phone: '01234556',
+    address: 'Hà Nội'
+}
+
+// truy vấn key trong object
+console.log(user.name);
+// chỉnh sửa value của key trong object
+console.log(39, user);
+user.tuoi = 21;
+console.log(41,user);
+
+user.phone = '0339951231';
+console.log(user);
+
+output
+39 { name: 'Tho', tuoi: 20, phone: '01234556', address: 'Hà Nội' }
+41 { name: 'Tho', tuoi: 21, phone: '01234556', address: 'Hà Nội' }
+{ name: 'Tho', tuoi: 21, phone: '0339951231', address: 'Hà Nội' }
+
+object[key]             truy vấn , ghi đè nội dung key trong object
+                        có thể dùng logic trong truy vấn
+
+VD:
+var user = {
+    name: 'Tho',
+    age: 20,
+    phone: '01234556',
+    address: 'Hà Nội'
+}
+
+var key = 'age';
+
+console.log(user[key]);// 20
+
+delete object.key       xóa data khỏi object
+
+=================================================================
+array       thường để lưu danh sách
+            Là object
+
+var list = [value1 , value2 ,....]       
+                        không còn key nữa , chỉ còn value
+                        Có đánh số thứ tự bắt đầu từ 0
+
+object[key]             truy vấn , ghi đè , thêm mới nội dung key trong object
+                        có thể dùng logic trong truy vấn
+
+VD:
+var list = ['kien' , 'nam' , 'trung'];
+// truy vấn
+console.log(list[0]);
+// ghi đè
+list[0] = 'Tho';
+console.log(list[0]);
+// thêm mới
+list[3] = 'Phuoc';
+console.log(list);
+
+object.length               là phương thức lấy độ dài và thay
+                            đổi độ dài của mảng
+
+VD:
+list.length = 2
+console.log(list);
+
+list.length = 6
+console.log(list);
+//[ 'Tho', 'nam' ]
+//[ 'Tho', 'nam', <4 empty items> ]
+
+length - 1                  vị trí phần tử cuối cùng

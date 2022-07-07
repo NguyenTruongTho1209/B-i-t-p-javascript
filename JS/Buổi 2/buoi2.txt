@@ -1,0 +1,52 @@
+NaN                 Là viết tắt của Not a Number
+                    Đã ép dữ liệu về Number nhưng ko tính toán được
+
++                   Number + Number thì tính bình thường
+                    còn lại là ghép chuỗi
+
+- * /               Tự động ép kiểu dữ liệu từ chữ về số
+                    Nếu là Number - Chữ thì sẽ trả về NaN
+
+%                   Là phép toán lấy dư và cũng tự động ép kiểu
+
+parseInrt()         Ép kiểu từ string về Number
+
+toString()          Ép kiểu chuyển từ Number về String
+
+> < <= >=           so sánh chuỗi
+
+=                   gán giá trị
+
+==                  so sánh bằng
+
+===                 so sánh về giá trị và kiểu dữ liệu
+
+!                   Nghịch đảo
+
+!==                 Khác
+
+**                  số mũ
+
+** (1/2)            Căn bậc 2
+
+++ --               Tăng và giảm 1 đơn vị
+
+number++            dùng number trước rồi mới tăng number
+++number            tăng number trước rồi mới dùng number
+
+||                  điều kiện hoặc
+                    true nếu có ít nhất 1 điều kiện đúng
+                    false khi tất cả false
+
+&&                  điều kiện và 
+                    true khi tất cả đều là true
+                    false khi có 1 điều kiện bất kì false
+
+Toán tử 3 ngôi
+
+(Điều kiên) ? kq nếu true : kq nếu false
+
+var troCap = user.tuoi < 18 ? 2000000 : 0
+
+true // số dương // số âm // string có data // array // object 
+false // 0 // '' // NaN // undefined // null 

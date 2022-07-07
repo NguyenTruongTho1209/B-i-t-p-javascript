@@ -1,0 +1,49 @@
+Date Method 
+
+new Date()                  date hiện tại múi giờ +0
+
+new Date(string)            tạo date theo string đầu vào lúc 0:0:0
+                            lưu ý string phải ở định dạng năm/tháng/ngày
+
+newDate(năm , tháng , ngày , giờ , phút , giây)
+                            tạo date theo yêu cầu
+                            tháng đếm từ 0
+                            lưu ý : các tham số có thể cộng dồn
+
+new Date(number)            tạo date lấy gốc là 1/1/1970
+                            number tính thoei milisec
+
+date có kiểu dữ liệu là object 
+có thể dùng date để tính toán
+
+====================================================================================
+
+get                         lấy thông tin trong date object
+
+getFullyear()               lấy năm
+
+getMonth()                  lấy tháng
+                            lưu ý : tháng đếm từ 0
+
+getDate()                   Lấy ngày
+
+getDay()                    lấy thứ trong tuần
+                            lưu ý : 0 là chủ nhật
+
+===========================================================================
+set                         ghi đè , thay đổi thông tin cảu data object
+
+setFullyear(năm , tháng , ngày)
+                            chỉnh sửa năm tháng ngày có sẵn
+                            tháng đếm từ 0
+                            có thể cộng dồn
+
+setMonth(tháng , ngày)      chỉnh sửa tháng ngày có sẵn
+                            tháng đếm từ 0
+                            có thể cộng dồn
+
+setDate(ngay)               sửa ngày của date có sẵn
+                            có thể cộng dồn
+
+ 
+setHours(h, p, s, ms)       sửa giờ, phút, giay, mili giay 
